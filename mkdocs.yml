@@ -1,4 +1,5 @@
 site_name: Fcitx5 For Android
+site_description: Documentation for fcitx5-android
 theme:
   name: material
   palette:
