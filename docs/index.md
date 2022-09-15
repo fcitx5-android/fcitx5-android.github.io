@@ -9,4 +9,6 @@ hide:
 * 加入 Matrix 聊天室：<https://matrix.to/#/#fcitx5-android:mozilla.org>
 * 加入 Telegram 群聊：<https://t.me/+hci-DrFVWUM3NTUx>
 
-Telegram 群与 Matrix 聊天室是互通的。
+!!! info
+
+    Telegram 群与 Matrix 聊天室是互通的。

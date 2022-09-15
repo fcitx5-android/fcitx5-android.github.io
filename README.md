@@ -4,5 +4,4 @@ Documentation for fcitx5-android.
 
 ## Build
 
-You an install `mkdocs-material` via `pip`. 
-
+Install `mkdocs-material` via `pip`.
