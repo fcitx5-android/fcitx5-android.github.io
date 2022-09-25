@@ -22,6 +22,23 @@ repo_url: https://github.com/fcitx5-android/fcitx5-android
 
 edit_uri: https://github.com/fcitx5-android/fcitx5-android.github.io/edit/master/docs/
 
+copyright: Copyright &copy; 2022 Fcitx5 for Android Team
+
+extra:
+  social:
+    - icon: simple/github
+      link: https://github.com/fcitx5-android
+      name: fcitx5-android on GitHub
+    - icon: simple/matrix
+      link: https://matrix.to/#/#fcitx5-android:mozilla.org
+      name: fcitx5-android on Matrix
+    - icon: simple/telegram
+      link: https://t.me/+hci-DrFVWUM3NTUx
+      name: fcitx5-android on Telegram
+    - icon: simple/trello
+      link: https://trello.com/w/fcitx5android
+      name: fcitx5-android on Trello
+
 nav:
   - 主页: index.md
   - 安装: installation.md
