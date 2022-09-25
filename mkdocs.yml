@@ -22,6 +22,8 @@ repo_url: https://github.com/fcitx5-android/fcitx5-android
 
 edit_uri: https://github.com/fcitx5-android/fcitx5-android.github.io/edit/master/docs/
 
+copyright: Copyright &copy; 2022 Fcitx5 for Android Team
+
 nav:
   - 主页: index.md
   - 安装: installation.md
