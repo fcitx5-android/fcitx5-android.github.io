@@ -11,7 +11,11 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v2
+      - name: Setup Python 3.x
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - name: Install mkdocs-material
+        run: pip3 install mkdocs-material
       - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: mkdocs gh-deploy --force
