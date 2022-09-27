@@ -43,6 +43,7 @@ nav:
   - 主页: index.md
   - 安装: installation.md
   - 常见问题: faq.md
+  - 隐私策略: PRIVACY.md
 
 markdown_extensions:
   - toc:
