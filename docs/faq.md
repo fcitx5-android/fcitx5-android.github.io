@@ -52,7 +52,7 @@ fcitx5 的配置文件、输入历史及用户词库存储在设备外置存储�
 
 ## 如何为拼音输入法导入第三方词库
 
-fcitx5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93)。第三方词库的 *.dict 文件也存储在与用户词库相同的目录下，路径是 ``data/pinyin/dictionaries`。
+fcitx5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93)。第三方词库的 *.dict 文件也存储在与用户词库相同的目录下，路径是 `data/pinyin/dictionaries`。
 
 你也可以在拼音输入法的设置界面中，点击`词库`，然后再点击右下方的加号手动添加第三方词库。
 
