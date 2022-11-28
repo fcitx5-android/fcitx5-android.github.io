@@ -49,3 +49,31 @@
 fcitx5 的配置文件、输入历史及用户词库存储在设备外置存储中，路径为 `/sdcard/Android/data/org.fcitx.fcitx5.android/files/` 。拼音和双拼输入法的用户词库/输入历史保存在 `data/pinyin/user.{dict,history}` ，五笔等码表输入法为 `data/table/${name}.{dict,user.history}` 。
 
 使用系统内置文件管理器 (DocumentsUI)，在侧边栏中选择本应用的名称，也可以直接访问上述目录中的文件。
+
+## 如何为拼音输入法导入第三方词库
+
+fcitx5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93)。第三方词库的 *.dict 文件也存储在与用户词库相同的目录下，路径是 ``data/pinyin/dictionaries`。
+
+你也可以在拼音输入法的设置界面中，点击`词库`，然后再点击右下方的加号手动添加第三方词库。
+
+## 如何输入颜文字、emoji 符号与特定的 unicode 符号
+
+按住键盘左下方的 `,` 键，然后将手指滑向上方出现的三个按钮之一
+
+<center><img src="/assets/emoji-01.jpeg" alt="drawing" width="400"/></center>
+
+第一个图标会启动 Unicode，用于输入编码或者描述来搜索 Unicode 字符：
+
+<center><img src="/assets/unicode-01.jpeg" alt="drawing" width="400"/></center>
+
+相关的 Unicode 字符代号可参考：[Unicode Character Table](https://unicode-table.com/en/) 和 [Unicode 字符列表](https://zh.m.wikipedia.org/zh-cn/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8)
+
+第二个图标会打开 emoji 列表：
+
+<center><img src="/assets/emoji-02.jpeg" alt="drawing" width="400"/></center>
+
+点击左下方的 `:-)` 可以切换至颜文字列表。
+
+第三个图标会激活快速输入功能：
+
+<center><img src="/assets/quick-input-01.jpeg" alt="drawing" width="400"/></center>
