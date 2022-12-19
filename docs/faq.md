@@ -6,7 +6,7 @@
 
 以导入[郑码](https://github.com/fcitx/fcitx5-table-extra)为例：
 
-1. 获取 `zhengma.conf` 与 `zhengma.main.dict` 两个文件
+1. 获取 `zhengma.conf` 与 `zhengma.dict` 两个文件
 2. 将 `zhengma.dict` 添加至 `/Android/data/org.fcitx.fcitx5.android/files/data/table/` 目录
 3. 将 `zhengma.conf` 中 `[Table] File=` 的路径改为 `table/zhengma.dict`
 4. 将修改好的 `zhengma.conf` 添加至 `/Android/data/org.fcitx.fcitx5.android/files/data/inputmethod/` 目录
@@ -18,13 +18,15 @@
 
 !!! note
 
-    若 `table` 或 `data` 目录不存在，请创建。
+    若上述目录不存在，请创建。
 
 ## 如何移除输入法
 
 向左滑动条目，直至其背景变为带有垃圾桶图标的红色。
 
-同样的操作适用于其他类似的、具有列表结构界面设计，例如拼音词典、标点映射等等。
+!!! hint
+
+    同样的操作适用于其他类似的、具有列表结构界面设计，例如拼音词典、标点映射等等。
 
 ## 如何调整输入法顺序
 

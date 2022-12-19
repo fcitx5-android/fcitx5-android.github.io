@@ -6,25 +6,27 @@ Some frequently asked questions.
 
 Take importing [zhengma](https://github.com/fcitx/fcitx5-table-extra) as an example:
 
-1. Obtain `zhengma.conf` and `zhengma.main.dict`
+1. Obtain `zhengma.conf` and `zhengma.dict`
 2. Copy `zhengma.dict` to `/Android/data/org.fcitx.fcitx5.android/files/data/table/`
 3. In `zhengma.conf`, change the path specified after `[Table] File=` to `table/zhengma.dict`
 4. Copy modified `zhengma.conf` to `/Android/data/org.fcitx.fcitx5.android/files/data/inputmethod/`
 
 !!! warning
 
-    Above paths may not apply if you configured [work profile](https://developer.android.com/work/versions/android-11#work).
+    Above absolute paths may not apply if you configured [work profile](https://developer.android.com/work/versions/android-11#work).
     We recommend using the builtin file manager (via DocumentsUI) to manage the data of Fcitx5 for Android.
 
 !!! note
 
-    Create `table` and `data` directories if they don't exist.
+    Create directories if they don't exist.
 
 ## How to remove input method entry
 
 Swipe left on the entry until the backgournd changes to red with a trash can icon.
 
-The same operation applies to other list-like UI, such as pinyin dictionary, punctuation mapping, etc.
+!!! hint
+
+    The same operation applies to other list-like UI, such as pinyin dictionary, punctuation mapping, etc.
 
 ## How to adjust the order of input methods
 
@@ -38,6 +40,7 @@ you can move the cursor to the desired position directly by clicking.
 !!! hint
 
     This is useful when composing long sentences or modifying already entered contents.
+
 !!! note
 
     To make preedit shows in application, enable *Show preedit in application* in *Global Options* and *Pinyin*. Then, disable *Ignore system cursor position* in *Behavior*.
