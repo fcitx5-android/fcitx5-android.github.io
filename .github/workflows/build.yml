@@ -1,23 +1,17 @@
-name: Publish docs via GitHub Pages
+name: Build
 on:
   push:
     branches:
       - master
-
 jobs:
   build:
-    name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v2
-      - name: Setup Python 3.x
-        uses: actions/setup-python@v2
+      - uses: actions/checkout@v2.4.0
+      - uses: cachix/install-nix-action@v15
         with:
-          python-version: 3.x
-      - name: Install mkdocs-material
-        run: pip3 install mkdocs-material
-      - name: Install mkdocs-static-i18n
-        run: pip3 install mkdocs-static-i18n
-      - name: Deploy docs
-        run: mkdocs gh-deploy --force
+          extra_nix_config: |
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and deploy
+        run: nix develop --command mkdocs gh-deploy --force
