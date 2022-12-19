@@ -13,7 +13,8 @@
 
 !!! warning
 
-    若您配置了[工作资料](https://developer.android.com/work/versions/android-11#work)，则上述路径可能不适用。您可以通过系统内置文件管理器来管理 Fcitx5 for Android 的数据文件。
+    若您配置了[工作资料](https://developer.android.com/work/versions/android-11#work)，则上述绝对路径可能不适用。
+    我们推荐您使用系统内置文件管理器（通过 DocumentsUI）来管理 Fcitx5 for Android 的数据文件。
 
 !!! note
 
@@ -42,19 +43,22 @@
     要启用应用内预编辑，请在 *全局选项 (Global Options)* 以及拼音设置中启用 *在程序中展示预编辑文本 (Show preedit in application)*，并在 *行为 (Behavior)* 中关闭 *忽略系统光标位置 (Ignore system cursor position)*。
     如果移动光标后，光标会自动跳回左侧，请禁用拼音设置中的 *将嵌入预编辑文本的光标固定在开头 (Fix embedded preedit cursor at the beginning of the preedit)*。
 
-按住退格键并向左划动一段距离后松手，可以重置输入状态，快速清空预编辑文本及候选词。
+## 如何重置输入状态
+
+按住退格键并向左划动一段距离后松手，可以重置输入状态、清空预编辑文本及候选词。
 
 ## 如何导出配置文件/用户词库
 
-fcitx5 的配置文件、输入历史及用户词库存储在设备外置存储中，路径为 `/sdcard/Android/data/org.fcitx.fcitx5.android/files/` 。拼音和双拼输入法的用户词库/输入历史保存在 `data/pinyin/user.{dict,history}` ，五笔等码表输入法为 `data/table/${name}.{dict,user.history}` 。
+Fcitx 5 的配置文件、输入历史及用户词库存储在设备外置存储中，路径为 `/sdcard/Android/data/org.fcitx.fcitx5.android/files/` 。拼音和双拼输入法的用户词库/输入历史保存在 `data/pinyin/user.{dict,history}` ，五笔等码表输入法为 `data/table/${name}.{dict,user.history}` 。
 
-使用系统内置文件管理器 (DocumentsUI)，在侧边栏中选择本应用的名称，也可以直接访问上述目录中的文件。
+!!! warning
+
+    若您配置了[工作资料](https://developer.android.com/work/versions/android-11#work)，则上述绝对路径可能不适用。
+    我们推荐您使用系统内置文件管理器（通过 DocumentsUI）来管理 Fcitx5 for Android 的数据文件。
 
 ## 如何为拼音输入法导入第三方词库
 
-fcitx5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93)。第三方词库的 *.dict 文件也存储在与用户词库相同的目录下，路径是 `data/pinyin/dictionaries`。
-
-你也可以在拼音输入法的设置界面中，点击`词库`，然后再点击右下方的加号手动添加第三方词库。
+Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93)。第三方词库的 *.dict 文件也存储在与用户词库相同的目录下，路径是 `data/pinyin/dictionaries`。Fcitx 5 for Android 注册了 `.dict`、 `.scel`，以及 `.txt` 文件打开打开方式，因此您可以直接用应用打开词典文件来导入。您也可以在拼音输入法的设置界面中使用 `词库` 来管理添加的词库。
 
 ## 如何输入颜文字、emoji 符号与特定的 unicode 符号
 
@@ -66,7 +70,8 @@ fcitx5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%E
 
 <center><img src="/assets/unicode-01.jpeg" alt="drawing" width="400"/></center>
 
-相关的 Unicode 字符代号可参考：[Unicode Character Table](https://unicode-table.com/en/) 和 [Unicode 字符列表](https://zh.m.wikipedia.org/zh-cn/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8)
+!!! hint
+    相关的 Unicode 字符代号可参考 [Unicode Character Table](https://unicode-table.com/en/) 和 [Unicode 字符列表](https://zh.m.wikipedia.org/zh-cn/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8)。
 
 第二个图标会打开 emoji 列表：
 

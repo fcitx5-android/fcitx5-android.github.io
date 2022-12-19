@@ -17,5 +17,7 @@ jobs:
           python-version: 3.x
       - name: Install mkdocs-material
         run: pip3 install mkdocs-material
+      - name: Install mkdocs-static-i18n
+        run: pip3 install mkdocs-static-i18n
       - name: Deploy docs
         run: mkdocs gh-deploy --force

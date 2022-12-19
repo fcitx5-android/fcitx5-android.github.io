@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# 欢迎访问 Fcitx5 for Android 文档
+# Fcitx5 for Android
 
 * 在 Trello 看板查看开发进程与计划：<https://trello.com/b/gftk6ZdV/kanban>
 * 加入 Matrix 聊天室：<https://matrix.to/#/#fcitx5-android:mozilla.org>

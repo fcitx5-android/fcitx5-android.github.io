@@ -5,11 +5,9 @@ theme:
   palette:
     primary: teal
     accent: teal
-  language: zh
   favicon: assets/ic_launcher_legacy_source.png
   logo: assets/ic_launcher_legacy_source.png
   features:
-    - navigation.instant
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
@@ -39,11 +37,12 @@ extra:
       link: https://trello.com/w/fcitx5android
       name: fcitx5-android on Trello
 
-nav:
-  - 主页: index.md
-  - 安装: installation.md
-  - 常见问题: faq.md
-  - 隐私策略: PRIVACY.md
+plugins:
+  - i18n:
+      default_language: zh
+      languages:
+        en: English
+        zh: 简体中文
 
 markdown_extensions:
   - toc:
