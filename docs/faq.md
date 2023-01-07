@@ -2,27 +2,41 @@
 
 一些可能经常遇到的问题。
 
+## 如何导入码表
+
+[fcitx5-android#175](https://github.com/fcitx5-android/fcitx5-android/pull/175) 中新增了码表输入法导入功能，`0.0.3-43` 及之后的版本可以使用以下方法快速导入码表：
+
+1. 获取输入法配置文件（拓展名为 `.conf` 或 `.conf.in`）及码表词典（拓展名为 `.dict` 或 `.txt`）。以“郑码“为例，可以在 [fcitx/fcitx5-table-extra](https://github.com/fcitx/fcitx5-table-extra) 仓库中下载 `zhengma.conf.in` 及 `zhengma.txt`。
+2. 打开输入法设置界面，选择 插件 → 码表（点击右侧的齿轮图标打开设置） → 管理码表输入法，点击右下角加号按钮，在弹出的对话框“导入码表”中选择第二项“从单独的文件中导入”。
+3. 在新弹出的对话框中，点击“码表输入法配置文件”，并选择第 1 步中下载的 `zhengma.conf.in`；点击“码表词典”，选择第 1 步中下载的 `zhengma.txt`。确认文件选择无误后，点击“确定”按钮。
+4. 应用会弹出“正在导入 zhengma.conf.in”的通知。如果配置文件及词典均无误，数秒后对话框会自动关闭，同时列表中出现“Zhengma”字样，导入完成。
+
 ## 如何手动导入码表
 
-以导入[郑码](https://github.com/fcitx/fcitx5-table-extra)为例：
+手动导入码表，需要编写正确的输入法配置文件 `.conf`，并且使用 `libime_tabledict` 命令行工具把 `.txt` 格式的词典转换为 `.dict` 格式。具体步骤如下：
 
-1. 获取 `zhengma.conf` 与 `zhengma.dict` 两个文件
-2. 将 `zhengma.dict` 添加至 `/Android/data/org.fcitx.fcitx5.android/files/data/table/` 目录
-3. 将 `zhengma.conf` 中 `[Table] File=` 的路径改为 `table/zhengma.dict`
-4. 将修改好的 `zhengma.conf` 添加至 `/Android/data/org.fcitx.fcitx5.android/files/data/inputmethod/` 目录
+1. 获取输入法配置文件（拓展名为 `.conf`）及码表词典（拓展名为 `.dict` 或 `.txt`）。以“郑码“为例，可以在 [fcitx/fcitx5-table-extra](https://github.com/fcitx/fcitx5-table-extra) 仓库中下载 `zhengma.conf.in` 及 `zhengma.txt`。
+2. 用文本编辑器打开 `zhengma.conf.in`，找到 `[Table]` 分段中的 `File=` 键，将其对应的值（等号 `=` 后面的部分）改为 `table/zhengma.dict`。将修改后的文件重命名为 `zhengma.conf`（去掉后缀的 `.in`）。
+3. 运行命令 `libime_tabledict zhengma.txt zhengma.dict`，转换词典格式。此工具在 Linux 发行版仓库中的包名一般为 `libime` 或 `libime-bin`。
+4. 把第 2 步修改好的 `zhengma.conf` 复制到手机 `/sdcard/Android/data/org.fcitx.fcitx5.android/files/data/inputmethod/` 目录。
+5. 把第 3 步转换后的 `zhengma.dict` 复制到手机 `/sdcard/Android/data/org.fcitx.fcitx5.android/files/data/table/` 目录。
+6. 重启输入法（把输入法设置界面的卡片从后台划掉，或直接强行停止）。
 
 !!! warning
 
     若您配置了[工作资料](https://developer.android.com/work/versions/android-11#work)，则上述绝对路径可能不适用。
     我们推荐您使用系统内置文件管理器（通过 DocumentsUI）来管理 Fcitx5 for Android 的数据文件。
+    在 DocumentsUI 的侧边栏中，选择“小企鹅输入法5”，即可直接访问 `/sdcard/Android/data/org.fcitx.fcitx5.android/files/` 目录中的文件，不需要借助第三方文件管理器，也不需要使用 adb 或者 root 权限。
 
 !!! note
 
-    若上述目录不存在，请创建。
+    若 `inputmethod` 或 `table` 目录不存在，请新建对应名称的文件夹。
 
 ## 如何移除输入法
 
 向左滑动条目，直至其背景变为带有垃圾桶图标的红色。
+
+[fcitx5-android#170](https://github.com/fcitx5-android/fcitx5-android/pull/170) 中新增了多选删除功能，`0.0.3-37` 及之后的版本，可以点击输入法列表界面右上角的编辑（铅笔）图标，进入多选模式，此时输入法名称前面会出现复选框，选中要删除的输入法后，再点击右上角的删除（垃圾桶）图标即可批量删除。
 
 !!! hint
 
