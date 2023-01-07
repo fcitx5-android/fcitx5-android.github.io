@@ -2,27 +2,45 @@
 
 Some frequently asked questions.
 
+## How to import table
+
+[fcitx5-android#175](https://github.com/fcitx5-android/fcitx5-android/pull/175) adds the support of importing table based input method, so after `0.0.3-43`, you can import table using following steps:
+
+1. Obtain the configuration file of the input method (the filename extension should be `.conf` or `.conf.in`) and table dictionary (the filename extension should be `.dict` or `.txt`) to be imported. Take "zhengma" as an example, you can download `zhengma.conf.in` and `zhengma.txt` at [fcitx/fcitx5-table-extra](https://github.com/fcitx/fcitx5-table-extra).
+2. Open the App, navigate to Addons → Table (click the gear button on the right) → Manage Table Input Methods, and click the plus button in the lower right corner. Select the second term, i.e. "From separate files", in the dialog that pops up.
+3. In the new dialog, click "Input method configuration file" and select `zhengma.conf.in` obtained in step 1; click "Table dictionary" and select `zhengma.txt` obtained in step 1; and click OK button.
+4. A notification of "Importing zheng,a.conf.in" should be created by the App. If the file are correct, the operation may take a few seconds. Then, you will see "Zhengma" in the list.
+
 ## How to import table manually
 
-Take importing [zhengma](https://github.com/fcitx/fcitx5-table-extra) as an example:
+In order to import a table manually, you need to have a correct input method configuration file `.conf` and convert the table dictionary in `.txt` form into `.dict` form using `libime_tabledict` command line tool.
 
-1. Obtain `zhengma.conf` and `zhengma.dict`
-2. Copy `zhengma.dict` to `/Android/data/org.fcitx.fcitx5.android/files/data/table/`
-3. In `zhengma.conf`, change the path specified after `[Table] File=` to `table/zhengma.dict`
-4. Copy modified `zhengma.conf` to `/Android/data/org.fcitx.fcitx5.android/files/data/inputmethod/`
+
+1. Obtain the configuration file of the input method (the filename extension should be `.conf` or `.conf.in`) and table dictionary (the filename extension should be `.dict` or `.txt`) to be imported. Take "zhengma" as an example, you can download `zhengma.conf.in` and `zhengma.txt` at [fcitx/fcitx5-table-extra](https://github.com/fcitx/fcitx5-table-extra).
+2. Open `zhengma.conf.in` with your favorite editor and modify the path specified after `[Table] File=` to `table/zhengma.dict`.
+3. Run command `libime_tabledict zhengma.txt zhengma.dict` to convert the table dictionary. This tool is usually provided by package called `libime` or `libime-bin` among Linux distributions.
+4. Copy modified `zhengma.conf` in step 2 to `/sdcard/Android/data/org.fcitx.fcitx5.android/files/data/inputmethod/`.
+5. Copy converted `zhengma.dict` in step 3 to `/sdcard/Android/data/org.fcitx.fcitx5.android/files/data/table/`.
+6. Restart the App (remove the task or just use force stop)
 
 !!! warning
 
     Above absolute paths may not apply if you configured [work profile](https://developer.android.com/work/versions/android-11#work).
     We recommend using the builtin file manager (via DocumentsUI) to manage the data of Fcitx5 for Android.
+    You can access the files in `/sdcard/Android/data/org.fcitx.fcitx5.android/files/` by selecting "Fcitx 5 for Android" in the sidebar of DocumentsUI. No third-party file manager/adb/root permission are required.
 
 !!! note
 
-    Create directories if they don't exist.
+    Create `inputmethod` and `table` if they don't exist.
 
 ## How to remove input method entry
 
 Swipe left on the entry until the backgournd changes to red with a trash can icon.
+
+[fcitx5-android#170](https://github.com/fcitx5-android/fcitx5-android/pull/170) adds multi-selecting deletion, so after `0.0.3-37`,
+you can click the edit (pencil) button in top right corner of the input method list to enter the multi-selecting mode,
+where checkbox will appear in the front of the input method name. You can check the input methods to be deleted,
+and click the delete (trash can) button in the top right corner.
 
 !!! hint
 
@@ -57,9 +75,9 @@ The input history and user dinctionary for Pinyin/Shuangpin are at `data/pinyin/
 
 !!! warning
 
-    Abosolute path above may not apply if you configured [work profile](https://developer.android.com/work/versions/android-11#work).
+    Above absolute paths may not apply if you configured [work profile](https://developer.android.com/work/versions/android-11#work).
     We recommend using the builtin file manager (via DocumentsUI) to manage the data of Fcitx5 for Android.
-
+    You can access the files in `/sdcard/Android/data/org.fcitx.fcitx5.android/files/` by selecting "Fcitx 5 for Android" in the sidebar of DocumentsUI. No third-party file manager/adb/root permission are required.
 
 ## How to import Pinyin dictionary
 

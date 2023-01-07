@@ -25,7 +25,7 @@
 !!! warning
 
     若您配置了[工作资料](https://developer.android.com/work/versions/android-11#work)，则上述绝对路径可能不适用。
-    我们推荐您使用系统内置文件管理器（通过 DocumentsUI）来管理 Fcitx5 for Android 的数据文件。
+    我们推荐您使用系统内置文件管理器（通过 DocumentsUI）来管理小企鹅输入法5的数据文件。
     在 DocumentsUI 的侧边栏中，选择“小企鹅输入法5”，即可直接访问 `/sdcard/Android/data/org.fcitx.fcitx5.android/files/` 目录中的文件，不需要借助第三方文件管理器，也不需要使用 adb 或者 root 权限。
 
 !!! note
@@ -70,11 +70,12 @@ Fcitx 5 的配置文件、输入历史及用户词库存储在设备外置存储
 !!! warning
 
     若您配置了[工作资料](https://developer.android.com/work/versions/android-11#work)，则上述绝对路径可能不适用。
-    我们推荐您使用系统内置文件管理器（通过 DocumentsUI）来管理 Fcitx5 for Android 的数据文件。
+    我们推荐您使用系统内置文件管理器（通过 DocumentsUI）来管理小企鹅输入法5的数据文件。
+    在 DocumentsUI 的侧边栏中，选择“小企鹅输入法5”，即可直接访问 `/sdcard/Android/data/org.fcitx.fcitx5.android/files/` 目录中的文件，不需要借助第三方文件管理器，也不需要使用 adb 或者 root 权限。
 
 ## 如何为拼音输入法导入第三方词库
 
-Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93)。第三方词库的 *.dict 文件也存储在与用户词库相同的目录下，路径是 `data/pinyin/dictionaries`。Fcitx 5 for Android 注册了 `.dict`、 `.scel`，以及 `.txt` 文件打开打开方式，因此您可以直接用应用打开词典文件来导入。您也可以在拼音输入法的设置界面中使用 `词库` 来管理添加的词库。
+Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93)。第三方词库的 *.dict 文件也存储在与用户词库相同的目录下，路径是 `data/pinyin/dictionaries`。小企鹅输入法5注册了 `.dict`、 `.scel`，以及 `.txt` 文件打开打开方式，因此您可以直接用应用打开词典文件来导入。您也可以在拼音输入法的设置界面中使用 `词库` 来管理添加的词库。
 
 ## 如何输入颜文字、emoji 符号与特定的 unicode 符号
 
