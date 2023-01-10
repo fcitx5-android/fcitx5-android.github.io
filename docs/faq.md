@@ -75,8 +75,39 @@ Fcitx 5 的配置文件、输入历史及用户词库存储在设备外置存储
 
 ## 如何为拼音输入法导入第三方词库
 
-Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93)。第三方词库的 *.dict 文件也存储在与用户词库相同的目录下，路径是 `data/pinyin/dictionaries`。小企鹅输入法5注册了 `.dict`、 `.scel`，以及 `.txt` 文件打开打开方式，因此您可以直接用应用打开词典文件来导入。您也可以在拼音输入法的设置界面中使用 `词库` 来管理添加的词库。
+Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93)。第三方词库的 *.dict 文件也存储在与用户词库相同的目录下，路径是 `data/pinyin/dictionaries`。小企鹅输入法5注册了 `.dict`、 `.scel`，以及 `.txt` 文件打开打开方式，因此您可以直接用应用打开词典文件来导入。
 
+!!! hint
+
+    您也可以在拼音输入法的设置界面中使用 *词库 (Pinyin Dictionaries)* 来管理添加的词库。
+
+## 拼音词库的格式是什么
+
+要导入的拼音字典必须是以下三种格式之一：
+
+* [搜狗细胞词库](https://pinyin.sogou.com/dict/)，拓展名为 `.scel`
+* libime 文本格式，一个 `.txt` 文件，其中单词、全拼和权重按照
+    ```
+     拼音	pin'yin	0
+     词条	全拼	权重
+    ```
+    排成三列
+* libime 二进制格式，一个 `.dict` 文件，可以用命令行工具 `libime_pinyindict` 从文本格式转换而来
+
+
+如果您想制作你自己的字典，我们建议使用 `.txt` 格式。
+
+!!! note
+
+    当导入 `.scel` 或 `.txt` 字典时，它将被自动转换为 `.dict` 格式。
+
+!!! hint
+
+    具体 libime 文本格式的例子您可以参考内置的 [emoji 词典](https://github.com/fcitx/fcitx5-chinese-addons/blob/5.0.16/im/pinyin/emoji.txt)。
+
+!!! hint
+
+    一些第三方词库可能会提供 libime 二进制格式，比如 [fcitx5-pinyin-zhwiki](https://github.com/felixonmars/fcitx5-pinyin-zhwiki) 和 [mw2fcitx](https://github.com/outloudvi/mw2fcitx)。
 ## 如何输入颜文字、emoji 符号与特定的 unicode 符号
 
 按住键盘左下方的 `,` 键，然后将手指滑向上方出现的三个按钮之一

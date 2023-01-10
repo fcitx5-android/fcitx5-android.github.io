@@ -4,12 +4,12 @@ Some frequently asked questions.
 
 ## How to import table
 
-[fcitx5-android#175](https://github.com/fcitx5-android/fcitx5-android/pull/175) adds the support of importing table based input method, so after `0.0.3-43`, you can import table using following steps:
+[fcitx5-android#175](https://github.com/fcitx5-android/fcitx5-android/pull/175) adds the support of importing table based input method, so after `0.0.3-43`, you can import table with following steps:
 
 1. Obtain the configuration file of the input method (the filename extension should be `.conf` or `.conf.in`) and table dictionary (the filename extension should be `.dict` or `.txt`) to be imported. Take "zhengma" as an example, you can download `zhengma.conf.in` and `zhengma.txt` at [fcitx/fcitx5-table-extra](https://github.com/fcitx/fcitx5-table-extra).
 2. Open the App, navigate to Addons → Table (click the gear button on the right) → Manage Table Input Methods, and click the plus button in the lower right corner. Select the second term, i.e. "From separate files", in the dialog that pops up.
 3. In the new dialog, click "Input method configuration file" and select `zhengma.conf.in` obtained in step 1; click "Table dictionary" and select `zhengma.txt` obtained in step 1; and click OK button.
-4. A notification of "Importing zheng,a.conf.in" should be created by the App. If the file are correct, the operation may take a few seconds. Then, you will see "Zhengma" in the list.
+4. A notification of "Importing zheng,a.conf.in" should be created by the App. If the files are correct, the operation may take a few seconds. Then, you will see "Zhengma" in the list.
 
 ## How to import table manually
 
@@ -25,7 +25,7 @@ In order to import a table manually, you need to have a correct input method con
 
 !!! warning
 
-    Above absolute paths may not apply if you configured [work profile](https://developer.android.com/work/versions/android-11#work).
+    Absolute paths above may not apply if you configured [work profile](https://developer.android.com/work/versions/android-11#work).
     We recommend using the builtin file manager (via DocumentsUI) to manage the data of Fcitx5 for Android.
     You can access the files in `/sdcard/Android/data/org.fcitx.fcitx5.android/files/` by selecting "Fcitx 5 for Android" in the sidebar of DocumentsUI. No third-party file manager/adb/root permission are required.
 
@@ -75,15 +75,44 @@ The input history and user dinctionary for Pinyin/Shuangpin are at `data/pinyin/
 
 !!! warning
 
-    Above absolute paths may not apply if you configured [work profile](https://developer.android.com/work/versions/android-11#work).
+    Absolute paths above may not apply if you configured [work profile](https://developer.android.com/work/versions/android-11#work).
     We recommend using the builtin file manager (via DocumentsUI) to manage the data of Fcitx5 for Android.
     You can access the files in `/sdcard/Android/data/org.fcitx.fcitx5.android/files/` by selecting "Fcitx 5 for Android" in the sidebar of DocumentsUI. No third-party file manager/adb/root permission are required.
 
 ## How to import Pinyin dictionary
 
-Fcitx 5 supports custom dictionaries. They are stored in `data/pinyin/dictionaries`.
-Fcitx 5 for Android registers three supported file types: `.dict`, `.scel`, and `.txt`, so uou can import the the dictionary by opening the file with Fcitx5 for Android.
-You can also manage the dictionary using *Pinyin Dictionaries* in settings.
+Fcitx 5 supports custom pinyin dictionaries, which are stored in `data/pinyin/dictionaries`.
+Fcitx 5 for Android registers three supported file types: `.dict`, `.scel`, and `.txt`, so you can import the the dictionary by opening the file with Fcitx5 for Android.
+
+!!! hint
+
+    You can also manage dictionaries using *Pinyin Dictionaries* in settings.
+
+## What's the format of Pinyin dictionary
+
+The pinyin dictionary to be imported has to be in one of the following three formats:
+
+* [sougou scel dict](https://pinyin.sogou.com/dict/), a `.scel` file
+* libime text format, a `.txt` file where word, full pinyin, and weight form into three columns, e.g.
+      ```
+        拼音	pin'yin 0
+      ```
+* libime binary format, a `.dict` file which can be converted from text format using command line tool `libime_pinyindict`
+
+
+We recommend using `.txt` format if you want to make your own dictionary.
+
+!!! note
+
+     When importing `.scel` or `.txt` dictionary, it will be automatically converted into `.dict` format.
+
+!!! hint
+
+    You may refer to the builtin [emoji dictionary](https://github.com/fcitx/fcitx5-chinese-addons/blob/5.0.16/im/pinyin/emoji.txt) as an example of libime text format.
+
+!!! hint
+
+    Some third-party pinyin dictionaries may provide libime binary format ready to be imported, such as [fcitx5-pinyin-zhwiki](https://github.com/felixonmars/fcitx5-pinyin-zhwiki) and [mw2fcitx](https://github.com/outloudvi/mw2fcitx).
 
 ## How to input emoticon, emoji, or specific unicode symbol
 
