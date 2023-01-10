@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+         <loc>https://fcitx5-android.github.io/</loc>
+         <lastmod>1980-01-01</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://fcitx5-android.github.io/en/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://fcitx5-android.github.io/zh/"/>
+         
+    </url>
+    <url>
+         <loc>https://fcitx5-android.github.io/faq/</loc>
+         <lastmod>1980-01-01</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://fcitx5-android.github.io/en/faq/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://fcitx5-android.github.io/zh/faq/"/>
+         
+    </url>
+    <url>
+         <loc>https://fcitx5-android.github.io/installation/</loc>
+         <lastmod>1980-01-01</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://fcitx5-android.github.io/en/installation/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://fcitx5-android.github.io/zh/installation/"/>
+         
+    </url>
+    <url>
+         <loc>https://fcitx5-android.github.io/privacy/</loc>
+         <lastmod>1980-01-01</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://fcitx5-android.github.io/en/privacy/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://fcitx5-android.github.io/zh/privacy/"/>
+         
+    </url>
+</urlset>

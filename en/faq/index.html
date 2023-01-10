@@ -1,0 +1,668 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for fcitx5-android">
+      
+      
+      
+        <link rel="canonical" href="https://fcitx5-android.github.io/en/faq/">
+      
+      <link rel="icon" href="../../assets/ic_launcher_legacy_source.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.4.3">
+    
+    
+      
+        <title>FAQ - Fcitx5 For Android</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6b80c2a2.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#faq" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../" title="Fcitx5 For Android" class="md-header__button md-logo" aria-label="Fcitx5 For Android" data-md-component="logo">
+      
+  <img src="../../assets/ic_launcher_legacy_source.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fcitx5 For Android
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              FAQ
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="../../faq/" hreflang="zh" class="md-select__link">
+                    简体中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="./" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fcitx5-android/fcitx5-android" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fcitx5-android
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../" class="md-tabs__link">
+      Fcitx5 for Android
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      FAQ
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../installation/" class="md-tabs__link">
+      Installation
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../privacy/" class="md-tabs__link">
+      Privacy
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="Fcitx5 For Android" class="md-nav__button md-logo" aria-label="Fcitx5 For Android" data-md-component="logo">
+      
+  <img src="../../assets/ic_launcher_legacy_source.png" alt="logo">
+
+    </a>
+    Fcitx5 For Android
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fcitx5-android/fcitx5-android" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fcitx5-android
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Fcitx5 for Android
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          FAQ
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        FAQ
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-import-table" class="md-nav__link">
+    How to import table
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-import-table-manually" class="md-nav__link">
+    How to import table manually
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-remove-input-method-entry" class="md-nav__link">
+    How to remove input method entry
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-adjust-the-order-of-input-methods" class="md-nav__link">
+    How to adjust the order of input methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-modify-uncommitted-text" class="md-nav__link">
+    How to modify uncommitted text
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-reset-the-input-state" class="md-nav__link">
+    How to reset the input state
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-export-configruation-files-or-user-dictionary" class="md-nav__link">
+    How to export configruation files or user dictionary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-import-pinyin-dictionary" class="md-nav__link">
+    How to import Pinyin dictionary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-the-format-of-pinyin-dictionary" class="md-nav__link">
+    What's the format of Pinyin dictionary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-input-emoticon-emoji-or-specific-unicode-symbol" class="md-nav__link">
+    How to input emoticon, emoji, or specific unicode symbol
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../privacy/" class="md-nav__link">
+        Privacy
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  <a href="https://github.com/fcitx5-android/fcitx5-android.github.io/edit/master/docs/faq.en.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">#</a></h1>
+<p>Some frequently asked questions.</p>
+<h2 id="how-to-import-table">How to import table<a class="headerlink" href="#how-to-import-table" title="Permanent link">#</a></h2>
+<p><a href="https://github.com/fcitx5-android/fcitx5-android/pull/175">fcitx5-android#175</a> adds the support of importing table based input method, so after <code>0.0.3-43</code>, you can import table with following steps:</p>
+<ol>
+<li>Obtain the configuration file of the input method (the filename extension should be <code>.conf</code> or <code>.conf.in</code>) and table dictionary (the filename extension should be <code>.dict</code> or <code>.txt</code>) to be imported. Take "zhengma" as an example, you can download <code>zhengma.conf.in</code> and <code>zhengma.txt</code> at <a href="https://github.com/fcitx/fcitx5-table-extra">fcitx/fcitx5-table-extra</a>.</li>
+<li>Open the App, navigate to Addons → Table (click the gear button on the right) → Manage Table Input Methods, and click the plus button in the lower right corner. Select the second term, i.e. "From separate files", in the dialog that pops up.</li>
+<li>In the new dialog, click "Input method configuration file" and select <code>zhengma.conf.in</code> obtained in step 1; click "Table dictionary" and select <code>zhengma.txt</code> obtained in step 1; and click OK button.</li>
+<li>A notification of "Importing zheng,a.conf.in" should be created by the App. If the files are correct, the operation may take a few seconds. Then, you will see "Zhengma" in the list.</li>
+</ol>
+<h2 id="how-to-import-table-manually">How to import table manually<a class="headerlink" href="#how-to-import-table-manually" title="Permanent link">#</a></h2>
+<p>In order to import a table manually, you need to have a correct input method configuration file <code>.conf</code> and convert the table dictionary in <code>.txt</code> form into <code>.dict</code> form using <code>libime_tabledict</code> command line tool.</p>
+<ol>
+<li>Obtain the configuration file of the input method (the filename extension should be <code>.conf</code> or <code>.conf.in</code>) and table dictionary (the filename extension should be <code>.dict</code> or <code>.txt</code>) to be imported. Take "zhengma" as an example, you can download <code>zhengma.conf.in</code> and <code>zhengma.txt</code> at <a href="https://github.com/fcitx/fcitx5-table-extra">fcitx/fcitx5-table-extra</a>.</li>
+<li>Open <code>zhengma.conf.in</code> with your favorite editor and modify the path specified after <code>[Table] File=</code> to <code>table/zhengma.dict</code>.</li>
+<li>Run command <code>libime_tabledict zhengma.txt zhengma.dict</code> to convert the table dictionary. This tool is usually provided by package called <code>libime</code> or <code>libime-bin</code> among Linux distributions.</li>
+<li>Copy modified <code>zhengma.conf</code> in step 2 to <code>/sdcard/Android/data/org.fcitx.fcitx5.android/files/data/inputmethod/</code>.</li>
+<li>Copy converted <code>zhengma.dict</code> in step 3 to <code>/sdcard/Android/data/org.fcitx.fcitx5.android/files/data/table/</code>.</li>
+<li>Restart the App (remove the task or just use force stop)</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Absolute paths above may not apply if you configured <a href="https://developer.android.com/work/versions/android-11#work">work profile</a>.
+We recommend using the builtin file manager (via DocumentsUI) to manage the data of Fcitx5 for Android.
+You can access the files in <code>/sdcard/Android/data/org.fcitx.fcitx5.android/files/</code> by selecting "Fcitx 5 for Android" in the sidebar of DocumentsUI. No third-party file manager/adb/root permission are required.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Create <code>inputmethod</code> and <code>table</code> if they don't exist.</p>
+</div>
+<h2 id="how-to-remove-input-method-entry">How to remove input method entry<a class="headerlink" href="#how-to-remove-input-method-entry" title="Permanent link">#</a></h2>
+<p>Swipe left on the entry until the backgournd changes to red with a trash can icon.</p>
+<p><a href="https://github.com/fcitx5-android/fcitx5-android/pull/170">fcitx5-android#170</a> adds multi-selecting deletion, so after <code>0.0.3-37</code>,
+you can click the edit (pencil) button in top right corner of the input method list to enter the multi-selecting mode,
+where checkbox will appear in the front of the input method name. You can check the input methods to be deleted,
+and click the delete (trash can) button in the top right corner.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>The same operation applies to other list-like UI, such as pinyin dictionary, punctuation mapping, etc.</p>
+</div>
+<h2 id="how-to-adjust-the-order-of-input-methods">How to adjust the order of input methods<a class="headerlink" href="#how-to-adjust-the-order-of-input-methods" title="Permanent link">#</a></h2>
+<p>Long press on the entry util a shadow appears below, and then drag the entry to change the order.</p>
+<h2 id="how-to-modify-uncommitted-text">How to modify uncommitted text<a class="headerlink" href="#how-to-modify-uncommitted-text" title="Permanent link">#</a></h2>
+<p>When preedit shows in the keyboard, you can swipe on the space key to move the cursor; If it shows in application,
+you can move the cursor to the desired position directly by clicking.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>This is useful when composing long sentences or modifying already entered contents.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To make preedit shows in application, enable <em>Show preedit in application</em> in <em>Global Options</em> and <em>Pinyin</em>. Then, disable <em>Ignore system cursor position</em> in <em>Behavior</em>.
+If the cursor jumps to the left after a moving, please disable <em>Fix embedded preedit cursor at the beginning of the preedit</em> in <em>Pinyin</em>.</p>
+</div>
+<h2 id="how-to-reset-the-input-state">How to reset the input state<a class="headerlink" href="#how-to-reset-the-input-state" title="Permanent link">#</a></h2>
+<p>To clear the preedit and candidates, press and hold the backspace key, swiping left for a distance.</p>
+<h2 id="how-to-export-configruation-files-or-user-dictionary">How to export configruation files or user dictionary<a class="headerlink" href="#how-to-export-configruation-files-or-user-dictionary" title="Permanent link">#</a></h2>
+<p>The configuration files, input history, and user dictionary are saved to the external storage. The default path is <code>/sdcard/Android/data/org.fcitx.fcitx5.android/files/</code>.
+The input history and user dinctionary for Pinyin/Shuangpin are at <code>data/pinyin/user.{dict,history}</code>; those for Wubi are at <code>data/table/${name}.{dict,user.history}</code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Absolute paths above may not apply if you configured <a href="https://developer.android.com/work/versions/android-11#work">work profile</a>.
+We recommend using the builtin file manager (via DocumentsUI) to manage the data of Fcitx5 for Android.
+You can access the files in <code>/sdcard/Android/data/org.fcitx.fcitx5.android/files/</code> by selecting "Fcitx 5 for Android" in the sidebar of DocumentsUI. No third-party file manager/adb/root permission are required.</p>
+</div>
+<h2 id="how-to-import-pinyin-dictionary">How to import Pinyin dictionary<a class="headerlink" href="#how-to-import-pinyin-dictionary" title="Permanent link">#</a></h2>
+<p>Fcitx 5 supports custom pinyin dictionaries, which are stored in <code>data/pinyin/dictionaries</code>.
+Fcitx 5 for Android registers three supported file types: <code>.dict</code>, <code>.scel</code>, and <code>.txt</code>, so you can import the the dictionary by opening the file with Fcitx5 for Android.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You can also manage dictionaries using <em>Pinyin Dictionaries</em> in settings.</p>
+</div>
+<h2 id="whats-the-format-of-pinyin-dictionary">What's the format of Pinyin dictionary<a class="headerlink" href="#whats-the-format-of-pinyin-dictionary" title="Permanent link">#</a></h2>
+<p>The pinyin dictionary to be imported has to be in one of the following three formats:</p>
+<ul>
+<li><a href="https://pinyin.sogou.com/dict/">sougou scel dict</a>, a <code>.scel</code> file</li>
+<li>libime text format, a <code>.txt</code> file where word, full pinyin, and weight form into three columns, e.g.
+      <div class="highlight"><pre><span></span><code>  拼音  pin&#39;yin 0
+</code></pre></div></li>
+<li>libime binary format, a <code>.dict</code> file which can be converted from text format using command line tool <code>libime_pinyindict</code></li>
+</ul>
+<p>We recommend using <code>.txt</code> format if you want to make your own dictionary.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When importing <code>.scel</code> or <code>.txt</code> dictionary, it will be automatically converted into <code>.dict</code> format.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You may refer to the builtin <a href="https://github.com/fcitx/fcitx5-chinese-addons/blob/5.0.16/im/pinyin/emoji.txt">emoji dictionary</a> as an example of libime text format.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Some third-party pinyin dictionaries may provide libime binary format ready to be imported, such as <a href="https://github.com/felixonmars/fcitx5-pinyin-zhwiki">fcitx5-pinyin-zhwiki</a> and <a href="https://github.com/outloudvi/mw2fcitx">mw2fcitx</a>.</p>
+</div>
+<h2 id="how-to-input-emoticon-emoji-or-specific-unicode-symbol">How to input emoticon, emoji, or specific unicode symbol<a class="headerlink" href="#how-to-input-emoticon-emoji-or-specific-unicode-symbol" title="Permanent link">#</a></h2>
+<p>Press and hold <code>,</code> key, swiping towards one of the three icons popped up.</p>
+<p><center><img src="/assets/emoji-01.jpeg" alt="drawing" width="400"/></center></p>
+<p>The first icon actives unicode mode. You can search unicode by code or description:</p>
+<p><center><img src="/assets/unicode-01.jpeg" alt="drawing" width="400"/></center></p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You can find the details of unicode symbols at <a href="https://unicode-table.com/en/">Unicode Character Table</a>  or <a href="https://en.wikipedia.org/wiki/List_of_Unicode_characters">List of Unicode characters</a>.</p>
+</div>
+<p>The second icon switches to emoji keyboard:</p>
+<p><center><img src="/assets/emoji-02.jpeg" alt="drawing" width="400"/></center></p>
+<p>The <code>:-)</code> key below switches to emoticon keyboard.</p>
+<p>The third icon actives quick phrase:</p>
+<p><center><img src="/assets/quick-input-01.jpeg" alt="drawing" width="400"/></center></p>
+
+
+
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fcitx5 for Android" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Fcitx5 for Android
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../installation/" class="md-footer__link md-footer__link--next" aria-label="Next: Installation" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Installation
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 Fcitx5 for Android Contributors
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/fcitx5-android" target="_blank" rel="noopener" title="fcitx5-android on GitHub" class="md-social__link">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://matrix.to/#/#fcitx5-android:mozilla.org" target="_blank" rel="noopener" title="fcitx5-android on Matrix" class="md-social__link">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.632.55v22.9H2.28V24H0V0h2.28v.55zm7.043 7.26v1.157h.033a3.312 3.312 0 0 1 1.117-1.024c.433-.245.936-.365 1.5-.365.54 0 1.033.107 1.481.314.448.208.785.582 1.02 1.108.254-.374.6-.706 1.034-.992.434-.287.95-.43 1.546-.43.453 0 .872.056 1.26.167.388.11.716.286.993.53.276.245.489.559.646.951.152.392.23.863.23 1.417v5.728h-2.349V11.52c0-.286-.01-.559-.032-.812a1.755 1.755 0 0 0-.18-.66 1.106 1.106 0 0 0-.438-.448c-.194-.11-.457-.166-.785-.166-.332 0-.6.064-.803.189a1.38 1.38 0 0 0-.48.499 1.946 1.946 0 0 0-.231.696 5.56 5.56 0 0 0-.06.785v4.768h-2.35v-4.8c0-.254-.004-.503-.018-.752a2.074 2.074 0 0 0-.143-.688 1.052 1.052 0 0 0-.415-.503c-.194-.125-.476-.19-.854-.19-.111 0-.259.024-.439.074-.18.051-.36.143-.53.282a1.637 1.637 0 0 0-.439.595c-.12.259-.18.6-.18 1.02v4.966H5.46V7.81zm15.693 15.64V.55H21.72V0H24v24h-2.28v-.55z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://t.me/+hci-DrFVWUM3NTUx" target="_blank" rel="noopener" title="fcitx5-android on Telegram" class="md-social__link">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://trello.com/w/fcitx5android" target="_blank" rel="noopener" title="fcitx5-android on Trello" class="md-social__link">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.147 0H2.853A2.86 2.86 0 0 0 0 2.853v18.294A2.86 2.86 0 0 0 2.853 24h18.294A2.86 2.86 0 0 0 24 21.147V2.853A2.86 2.86 0 0 0 21.147 0zM10.34 17.287a.953.953 0 0 1-.953.953h-4a.954.954 0 0 1-.954-.953V5.38a.953.953 0 0 1 .954-.953h4a.954.954 0 0 1 .953.953zm9.233-5.467a.944.944 0 0 1-.953.947h-4a.947.947 0 0 1-.953-.947V5.38a.953.953 0 0 1 .953-.953h4a.954.954 0 0 1 .953.953z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "toc.integrate", "navigation.top"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.2ab50757.min.js"></script>
+      
+    
+  </body>
+</html>
