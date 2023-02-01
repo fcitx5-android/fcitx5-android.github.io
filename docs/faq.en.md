@@ -137,3 +137,18 @@ The `:-)` key below switches to emoticon keyboard.
 The third icon actives quick phrase:
 
 <center><img src="/assets/quick-input-01.jpeg" alt="drawing" width="400"/></center>
+
+## How to fix the keyboard overlapping with the navigation bar 
+
+The keyboard may overlap with the navigation bar on some specific devices:
+
+<center><img src="/assets/overlap.jpg" alt="drawing" width="400"/></center>
+
+The reason is not clear, but it can be fixed by setting *Navigation bar background* to *Follow keyboard color* in Theme settings.
+
+## What is Share Input State in Global Options
+
+This feature allows you to share the input context (mostly the active input method) between Apps. There are three options: *All*, *Program*, and *No*.
+By selecting *All*, when you switch to another App, the input method will be switched to the same one in the new App.
+For *Program* and *No*, those two options have almost the same effect so far, since only one input context is assigned to each program.
+By selecting one of them, the active input method will not shared between Apps.

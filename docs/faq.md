@@ -130,3 +130,16 @@ Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%
 第三个图标会激活快速输入功能：
 
 <center><img src="/assets/quick-input-01.jpeg" alt="drawing" width="400"/></center>
+
+## 如何修复键盘与导航栏重叠的问题
+
+在一些特定的设备上，键盘可能会与导航栏重叠：
+
+<center><img src="/assets/overlap.jpg" alt="drawing" width="400"/></center>
+
+问题的原因尚不清楚，但您可以通过在主题设置中将 *导航栏背景 (Navigation bar background)* 设置为 *跟随键盘背景色 (Follow keyboard color)* 来修复。
+
+## 全局选项中的共享输入状态是什么
+
+这个特性允许您在应用之间共享输入状态（主要是当前激活的输入法）。它提供三个选项：*所有 (All)*，*程序 (Program)*，和 *无 (No)*。
+在选择 *所有 (All)* 时，当您切换到另一个应用，新应用会激活相同的输入法。目前 *程序 (Program)*，和 *无 (No)* 的效果几乎相同，因为每个程序只有一个输入状态。在选择它们中的一个时，激活的输入法不会在应用之间共享。
