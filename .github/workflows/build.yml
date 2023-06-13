@@ -19,7 +19,7 @@ jobs:
           extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and deploy
+      - name: Build site
         run: nix develop --command mkdocs build --site-dir public
 
       - name: Upload artifact
