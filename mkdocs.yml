@@ -38,6 +38,7 @@ extra:
       name: fcitx5-android on Trello
 
 plugins:
+  - search
   - i18n:
       default_language: zh
       languages:
