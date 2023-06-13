@@ -15,7 +15,6 @@ Some frequently asked questions.
 
 In order to import a table manually, you need to have a correct input method configuration file `.conf` and convert the table dictionary in `.txt` form into `.dict` form using `libime_tabledict` command line tool.
 
-
 1. Obtain the configuration file of the input method (the filename extension should be `.conf` or `.conf.in`) and table dictionary (the filename extension should be `.dict` or `.txt`) to be imported. Take "zhengma" as an example, you can download `zhengma.conf.in` and `zhengma.txt` at [fcitx/fcitx5-table-extra](https://github.com/fcitx/fcitx5-table-extra).
 2. Open `zhengma.conf.in` with your favorite editor and modify the path specified after `[Table] File=` to `table/zhengma.dict`.
 3. Run command `libime_tabledict zhengma.txt zhengma.dict` to convert the table dictionary. This tool is usually provided by package called `libime` or `libime-bin` among Linux distributions.
@@ -95,10 +94,9 @@ The pinyin dictionary to be imported has to be in one of the following three for
 * [sougou scel dict](https://pinyin.sogou.com/dict/), a `.scel` file
 * libime text format, a `.txt` file where word, full pinyin, and weight form into three columns, e.g.
       ```
-        拼音	pin'yin 0
+        拼音	pin'yin	0
       ```
 * libime binary format, a `.dict` file which can be converted from text format using command line tool `libime_pinyindict`
-
 
 We recommend using `.txt` format if you want to make your own dictionary.
 
@@ -138,7 +136,7 @@ The third icon actives quick phrase:
 
 <center><img src="/assets/quick-input-01.jpeg" alt="drawing" width="400"/></center>
 
-## How to fix the keyboard overlapping with the navigation bar 
+## How to fix the keyboard overlapping with the navigation bar
 
 The keyboard may overlap with the navigation bar on some specific devices:
 
@@ -146,9 +144,12 @@ The keyboard may overlap with the navigation bar on some specific devices:
 
 The reason is not clear, but it can be fixed by setting *Navigation bar background* to *Follow keyboard color* in Theme settings.
 
-## What is Share Input State in Global Options
+## What is "Activate By Default" in "Global Options"
 
-This feature allows you to share the input context (mostly the active input method) between Apps. There are three options: *All*, *Program*, and *No*.
-By selecting *All*, when you switch to another App, the input method will be switched to the same one in the new App.
-For *Program* and *No*, those two options have almost the same effect so far, since only one input context is assigned to each program.
-By selecting one of them, the active input method will not shared between Apps.
+## What is "Share Input State" in "Global Options"
+
+This feature allows you to share the input context (mostly the active input method) between Apps. There are three options:
+
+- All: always use same input method when switching between Apps
+- Program: remember last used input method for each App
+- No: this is the default value. On Android, there is only one *InputContext* for each App, this option behaves exactly the same as *Program*
