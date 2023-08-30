@@ -153,16 +153,16 @@ Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%
 
 ## 如何自定义 OpenCC 转换配置？
 
-打开 `简繁转换` 页面，转换引擎设置为`OpenCC`。
+打开 “附加组件 - 简繁转换” 页面，转换引擎设置为“OpenCC”。
 
-配置简转繁, 修改`简转繁的 OpenCC配置`：
+配置简转繁, 修改“简转繁的 OpenCC配置”：
 
 - `s2hk.json` 简体到香港繁体
 - `s2t.json` 简体到繁体
 - `s2tw.json` 简体到台湾正体
 - `s2twp.json` 简体到繁体（台湾正体标准）并转换为台湾常用词汇
 
-配置繁转简, 修改`简转繁的 OpenCC配置`：
+配置繁转简, 修改“简转繁的 OpenCC配置”：
 
 - `hk2s.json` 香港繁体到简体
 - `hk2t.json` 香港繁体到繁体（OpenCC 标准）

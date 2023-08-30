@@ -155,16 +155,17 @@ This feature allows you to share the input context (mostly the active input meth
 - No: this is the default value. On Android, there is only one *InputContext* for each App, this option behaves exactly the same as *Program*
 
 ## How to customize OpenCC conversion profile?
-Open `Simplified and Traditional Chinese Translation`, Set `Translate engine` to `OpenCC`.
 
-To configure conversion, set `OpenCC profile for Simplified to Traditional` to one of the following values:
+Open "Addons - Simplified and Traditional Chinese Translation", Set "Translate engine" to "OpenCC".
+
+To configure conversion, set "OpenCC profile for Simplified to Traditional" to one of the following values:
 
 - `s2hk.json` Simplified Chinese to Traditional Chinese (Hong Kong variant)
 - `s2t.json` Simplified Chinese to Traditional Chinese
 - `s2tw.json` Simplified Chinese to Traditional Chinese (Taiwan Standard)
 - `s2twp.json` Simplified Chinese to Traditional Chinese (Taiwan Standard) with Taiwanese idiom
 
-To configure the reverse, set `OpenCC profile for Traditional to Simplified` to one of the following values:
+To configure the reverse, set "OpenCC profile for Traditional to Simplified" to one of the following values:
 
 - `hk2s.json` Traditional Chinese (Hong Kong variant) to Simplified Chinese
 - `hk2t.json` Traditional Chinese (Hong Kong variant) to Traditional Chinese
