@@ -153,3 +153,27 @@ This feature allows you to share the input context (mostly the active input meth
 - All: always use same input method when switching between Apps
 - Program: remember last used input method for each App
 - No: this is the default value. On Android, there is only one *InputContext* for each App, this option behaves exactly the same as *Program*
+
+## How to customize OpenCC conversion profile?
+
+Open "Addons - Simplified and Traditional Chinese Translation", Set "Translate engine" to "OpenCC".
+
+To configure conversion, set "OpenCC profile for Simplified to Traditional" to one of the following values:
+
+- `s2hk.json` Simplified Chinese to Traditional Chinese (Hong Kong variant)
+- `s2t.json` Simplified Chinese to Traditional Chinese
+- `s2tw.json` Simplified Chinese to Traditional Chinese (Taiwan Standard)
+- `s2twp.json` Simplified Chinese to Traditional Chinese (Taiwan Standard) with Taiwanese idiom
+
+To configure the reverse, set "OpenCC profile for Traditional to Simplified" to one of the following values:
+
+- `hk2s.json` Traditional Chinese (Hong Kong variant) to Simplified Chinese
+- `hk2t.json` Traditional Chinese (Hong Kong variant) to Traditional Chinese
+- `jp2t.json` New Japanese Kanji (Shinjitai) to Traditional Chinese Characters (Kyūjitai)
+- `t2hk.json` Traditional Chinese (OpenCC Standard) to Hong Kong variant
+- `t2jp.json` Traditional Chinese Characters (Kyūjitai) to New Japanese Kanji (Shinjitai)
+- `t2s.json` Traditional Chinese to Simplified Chinese
+- `t2tw.json` Traditional Chinese (OpenCC Standard) to Taiwan Standard
+- `tw2s.json` Traditional Chinese (Taiwan Standard) to Simplified Chinese
+- `tw2sp.json` Traditional Chinese (Taiwan Standard) to Simplified Chinese with Mainland Chinese idiom
+- `tw2t.json` Traditional Chinese (Taiwan standard) to Traditional Chinese

@@ -150,3 +150,28 @@ Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%
 - 所有 (All)：在不同的应用之间切换时，总是使用相同的输入法
 - 程序 (Program)：为每个应用记住当前激活的输入法
 - 否 (No)：此项为默认值。在 Android 上，每个程序只有一个 *输入上下文 (InputContext)*，因此此项的作用与 *程序 (Program)* 完全相同
+
+## 如何自定义 OpenCC 转换配置？
+
+打开 “附加组件 - 简繁转换” 页面，转换引擎设置为“OpenCC”。
+
+配置简转繁, 修改“简转繁的 OpenCC配置”：
+
+- `s2hk.json` 简体到香港繁体
+- `s2t.json` 简体到繁体
+- `s2tw.json` 简体到台湾正体
+- `s2twp.json` 简体到繁体（台湾正体标准）并转换为台湾常用词汇
+
+配置繁转简, 修改“简转繁的 OpenCC配置”：
+
+- `hk2s.json` 香港繁体到简体
+- `hk2t.json` 香港繁体到繁体（OpenCC 标准）
+- `jp2t.json` 日文新字体到繁体（OpenCC 标准，旧字体）
+- `t2hk.json` 繁体（OpenCC 标准）到香港繁体
+- `t2jp.json` 繁体（OpenCC 标准，旧字体）到日文新字体
+- `t2s.json` 繁体到简体
+- `t2tw.json` 繁体（OpenCC 标准）到台湾正体
+- `tw2s.json` 台湾正体到简体
+- `tw2sp.json` 繁体（台湾正体标准）到简体并转换为中国大陆常用词汇
+- `tw2t.json` 台湾正体到繁体（OpenCC 标准）
+
