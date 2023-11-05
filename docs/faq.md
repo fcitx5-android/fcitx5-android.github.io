@@ -177,8 +177,18 @@ Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%
 
 ## 如何使用语音输入
 
-首先确保您已安装且启用了 Google TTS，这可在您的 Android 系统设置中的 “应用 - 查看全部 XX 个应用” 页面点击右上角的搜索按钮并输入“语音识别”来确认：
+您可以选择 Google TTS 用作语音输入。
+
+!!! warning
+
+    Google TTS 为闭源组件，且在使用时会传输相关数据到 Google 服务器进行处理，建议您在阅读其隐私条款后决定是否使用。
+
+若要使用 Google TTS，首先确保您已安装且启用了 Google TTS，这可在您的 Android 系统设置中的 “应用 - 查看全部 XX 个应用” 页面点击右上角的搜索按钮并输入“语音识别”来确认：
 
 <center><img src="/assets/find-Google-TTS.jpg" alt="drawing" width="400"/></center>
 
-然后打开输入法设置界面中的 “键盘” 页面，使 “显示语音输入按钮” 处于激活状态。重启输入法后可以在右侧看到麦克风按钮，点击即可使用 Google 语音输入。
+此外，您还需要在 Android 系统设置中的 “系统 - 语言和输入法 - 屏幕键盘” 页面确保“Google 语音输入”处于激活状态：
+
+<center><img src="/assets/find-Google-TTS.jpg" alt="drawing" width="400"/></center>
+
+然后打开本输入法的设置界面中的 “键盘” 页面，使 “显示语音输入按钮” 处于激活状态。重启输入法后可以在右侧看到麦克风按钮，点击即可使用 Google 语音输入。
