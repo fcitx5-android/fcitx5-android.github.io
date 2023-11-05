@@ -175,3 +175,10 @@ Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%
 - `tw2sp.json` 繁体（台湾正体标准）到简体并转换为中国大陆常用词汇
 - `tw2t.json` 台湾正体到繁体（OpenCC 标准）
 
+## 如何使用语音输入
+
+首先确保您已安装且启用了 Google TTS，这可在您的 Android 系统设置中的 “应用 - 查看全部 XX 个应用” 页面点击右上角的搜索按钮并输入“语音识别”来确认：
+
+<center><img src="/assets/find-Google-TTS.jpg" alt="drawing" width="400"/></center>
+
+然后打开输入法设置界面中的 “键盘” 页面，使 “显示语音输入按钮” 处于激活状态。重启输入法后可以在右侧看到麦克风按钮，点击即可使用 Google 语音输入。
