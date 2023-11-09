@@ -175,3 +175,40 @@ Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%
 - `tw2sp.json` 繁体（台湾正体标准）到简体并转换为中国大陆常用词汇
 - `tw2t.json` 台湾正体到繁体（OpenCC 标准）
 
+## 如何使用语音输入
+
+在输入法设置的“键盘”页面，开启“显示语音输入按钮”选项后，若系统中有可用的语音输入法，键盘右上角的“收起键盘”按钮将会被替换为“语音输入”按钮，点击可以切换到可用的语音输入法。
+
+!!! hint
+
+    对“语音输入法”的判断条件为： [`android:imeSubtypeMode`](https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype#attr_android:imeSubtypeMode) 的值为 `"voice"` 。
+
+目前已知可以兼容的语音输入法有 Sayboard 和 Google 语音输入。
+
+### Sayboard
+
+[Sayboard](https://github.com/ElishaAz/Sayboard) 是基于 [Vosk](https://alphacephei.com/vosk/android) 的开源语音输入法。您可以在 [GitHub Release](https://github.com/ElishaAz/Sayboard/releases) 或 [F-Droid](https://f-droid.org/en/packages/com.elishaazaria.sayboard/) 下载 Sayboard 。
+
+安装并打开应用后，跟随其向导授予麦克风权限，并启用输入法。在使用语音输入前，需要在应用内下载模型，或在 [https://alphacephei.com/vosk/models](https://alphacephei.com/vosk/models) 手动下载并导入。
+
+### Google 语音输入
+
+!!! warning
+
+    Google 语音输入为闭源组件，且在使用时会传输相关数据到 Google 服务器进行处理，建议您在阅读其隐私条款后决定是否使用。
+
+首先确保您已经安装了“Google”及“Google 语音识别和语音合成”这两个应用，可以在 Android 系统设置中的 “应用 - 查看全部 XX 个应用” 页面，点击右上角的搜索按钮并输入“Google”来确认：
+
+<center><img src="/assets/install-google-tts.png" width="400"/></center>
+
+!!! note
+
+    上述两个应用的包名分别为
+
+    Google: com.google.android.googlequicksearchbox
+
+    Google 语音识别和语音合成: com.google.android.tts
+
+此外，您还需要在 Android 系统设置中的“系统 - 语言和输入法 - 屏幕键盘”页面，启用“Google 语音输入”：
+
+<center><img src="/assets/enable-google-tts.png" width="400"/></center>
