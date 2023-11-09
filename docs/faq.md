@@ -201,11 +201,13 @@ Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%
 
 <center><img src="/assets/install-google-tts.png" width="400"/></center>
 
-!!! hint
+!!! note
 
     上述两个应用的包名分别为
-    com.google.android.googlequicksearchbox
-    com.google.android.tts
+
+    Google: com.google.android.googlequicksearchbox
+
+    Google 语音识别和语音合成: com.google.android.tts
 
 此外，您还需要在 Android 系统设置中的“系统 - 语言和输入法 - 屏幕键盘”页面，启用“Google 语音输入”：
 
