@@ -40,10 +40,19 @@ extra:
 plugins:
   - search
   - i18n:
-      default_language: zh
+      docs_structure: suffix
+      fallback_to_default: true
       languages:
-        en: English
-        zh: 简体中文
+        - build: true
+          default: false
+          locale: en
+          name: English
+        - build: true
+          default: true
+          locale: zh
+          name: 简体中文
+      reconfigure_material: true
+      reconfigure_search: true
 
 markdown_extensions:
   - toc:
@@ -66,3 +75,7 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.tasklist
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

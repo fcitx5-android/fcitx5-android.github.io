@@ -10,24 +10,36 @@
   outputs = { self, nixpkgs, ... }:
     let
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
-      mkdocs-static-i18n = pkgs.python3Packages.buildPythonPackage {
-        pname = "mkdocs-static-i18n";
-        version = "0.53";
-        src = pkgs.fetchFromGitHub {
-          owner = "ultrabug";
-          repo = "mkdocs-static-i18n";
-          rev = "3b0c4a8978b5f706265ebed4deee4ca1cd726353";
-          sha256 = "Agxw/viwqNaojPOf2IckTMqEs09IurgTcMfRfMBjBso=";
+      packageOverrides = self: super: {
+        mkdocs-material = super.mkdocs-material.overridePythonAttrs (old: rec {
+          version = "9.4.6";
+          src = super.fetchPypi {
+            pname = "mkdocs_material";
+            inherit version;
+            hash = "sha256-CWZeYN9+6eX/OlSvFz9tRb5xix7n3ZYrz/MQK4H7DBQ=";
+          };
+        });
+        mkdocs-static-i18n = super.buildPythonPackage rec {
+          pname = "mkdocs-static-i18n";
+          version = "1.2.0";
+          pyproject = true;
+          src = super.fetchPypi {
+            inherit version;
+            pname = "mkdocs_static_i18n";
+            hash = "sha256-S9D/7J8dlmtmrOhTAntYaImumksrgMQutR1CkOXOD9c=";
+          };
+          propagatedBuildInputs = with self; [
+            setuptools
+            mkdocs
+            mkdocs-material
+            hatchling
+          ];
         };
-        propagatedBuildInputs = with pkgs.python3Packages; [
-          setuptools
-          mkdocs
-          mkdocs-material
-        ];
       };
+      python = pkgs.python3.override { inherit packageOverrides; };
     in with pkgs; {
       devShells.x86_64-linux.default = mkShell {
-        buildInputs = with python3Packages; [
+        buildInputs = with python.pkgs; [
           mkdocs
           mkdocs-material
           mkdocs-static-i18n
