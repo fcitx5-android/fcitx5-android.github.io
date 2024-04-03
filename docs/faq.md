@@ -119,7 +119,7 @@ Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%
 <center><img src="/assets/unicode-01.jpeg" alt="drawing" width="400"/></center>
 
 !!! hint
-    相关的 Unicode 字符代号可参考 [Unicode Character Table](https://unicode-table.com/en/) 和 [Unicode 字符列表](https://zh.m.wikipedia.org/zh-cn/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8)。
+    相关的 Unicode 字符代号可参考 [Unicode Character Table](https://symbl.cc/en/) 和 [Unicode 字符列表](https://zh.m.wikipedia.org/zh-cn/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8)。
 
 第二个图标会打开 emoji 列表：
 
