@@ -124,7 +124,7 @@ The first icon actives unicode mode. You can search unicode by code or descripti
 
 !!! hint
 
-    You can find the details of unicode symbols at [Unicode Character Table](https://unicode-table.com/en/)  or [List of Unicode characters](https://en.wikipedia.org/wiki/List_of_Unicode_characters).
+    You can find the details of unicode symbols at [List of Unicode Symbols](https://symbl.cc/en/unicode-table/)  or [List of Unicode characters](https://en.wikipedia.org/wiki/List_of_Unicode_characters).
 
 The second icon switches to emoji keyboard:
 
