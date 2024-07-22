@@ -25,6 +25,7 @@ theme:
     - navigation.tabs.sticky
     - toc.integrate
     - navigation.top
+    - content.action.edit
 site_url: https://fcitx5-android.github.io
 
 repo_name: fcitx5-android
@@ -32,7 +33,7 @@ repo_url: https://github.com/fcitx5-android/fcitx5-android
 
 edit_uri: https://github.com/fcitx5-android/fcitx5-android.github.io/edit/master/docs/
 
-copyright: Copyright &copy; 2022 - 2023 Fcitx5 for Android Contributors
+copyright: Copyright &copy; 2022 - 2024 Fcitx5 for Android Contributors
 
 extra:
   social:
