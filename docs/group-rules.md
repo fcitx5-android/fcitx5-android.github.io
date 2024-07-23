@@ -1,4 +1,4 @@
-# fcitx5-android 群组规则
+# 群组规则
 
 本规则适用于 [fcitx5-android](https://github.com/fcitx5-android/fcitx5-android) 交流群组，可以通过以下方式加入：
 

@@ -52,6 +52,7 @@ extra:
 
 plugins:
   - search
+  - awesome-pages
   - i18n:
       docs_structure: suffix
       fallback_to_default: true
