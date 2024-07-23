@@ -212,3 +212,12 @@ Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%
 此外，您还需要在 Android 系统设置中的“系统 - 语言和输入法 - 屏幕键盘”页面，启用“Google 语音输入”：
 
 <center><img src="/assets/enable-google-tts.png" width="400"/></center>
+
+## 唤不起键盘
+
+请为所有插件及主程序添加“自启动”、“关联启动”、“后台运行”等权限。
+
+!!! note
+
+    安装插件后。在主程序调用插件时，OEM 系统可能在先前冻结了插件，使主程序一直等下去。
+    若你为手机增设了有后台管理功能的 Xposed 模块，请一并为插件及主程序增设白名单。
