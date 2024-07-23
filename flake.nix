@@ -12,21 +12,21 @@
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
       packageOverrides = self: super: {
         mkdocs-material = super.mkdocs-material.overridePythonAttrs (old: rec {
-          version = "9.4.6";
+          version = "9.5.30";
           src = super.fetchPypi {
             pname = "mkdocs_material";
             inherit version;
-            hash = "sha256-CWZeYN9+6eX/OlSvFz9tRb5xix7n3ZYrz/MQK4H7DBQ=";
+            hash = "sha256-P9QX3ULWeeO6CLni1yzYuK8ULMSjlpZ2rWsAmT3Rguw=";
           };
         });
         mkdocs-static-i18n = super.buildPythonPackage rec {
           pname = "mkdocs-static-i18n";
-          version = "1.2.0";
+          version = "1.2.3";
           pyproject = true;
           src = super.fetchPypi {
             inherit version;
             pname = "mkdocs_static_i18n";
-            hash = "sha256-S9D/7J8dlmtmrOhTAntYaImumksrgMQutR1CkOXOD9c=";
+            hash = "sha256-fM9Npt0pVw7EnNhj6/9v75y4LbscuFJJvfdE6Ng5yRQ=";
           };
           propagatedBuildInputs = with self; [
             setuptools
