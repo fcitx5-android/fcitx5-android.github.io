@@ -43,6 +43,7 @@
           mkdocs
           mkdocs-material
           mkdocs-static-i18n
+          mkdocs-awesome-pages-plugin
         ];
       };
     };
