@@ -67,6 +67,10 @@ plugins:
           locale: en
           name: English
         - build: true
+          default: false
+          locale: ru
+          name: Русский
+        - build: true
           default: true
           locale: zh
           name: 简体中文
