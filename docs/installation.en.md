@@ -6,7 +6,7 @@ You can get stable version of fcitx5-android from GitHub Release / F-Droid / Goo
 
 !!! note
 
-    fcitx5-android implements [reproducible build](https://f-droid.org/en/docs/Reproducible_Builds/)，thus apk from GitHub Release and F-Droid can override each other. However due to Google Play restrictions, version from Google Play can't be overriden by other versions.
+    fcitx5-android implements [reproducible build](https://f-droid.org/en/docs/Reproducible_Builds/), thus apk from GitHub Release and F-Droid can override each other. However due to Google Play restrictions, version from Google Play can't be overridden by other versions.
 
 GitHub: [![release version](https://img.shields.io/github/v/release/fcitx5-android/fcitx5-android)](https://github.com/fcitx5-android/fcitx5-android/releases)
 
